@@ -79,7 +79,7 @@ local function SaveOptions(options)
 end
 
 local function isScapeDoll(item)
-    if item.data[1] == 3 and item.hex == 0x030900 then
+    if item.hex == 0x030900 then
         return true
     end
     return false
