@@ -12,6 +12,8 @@ if optionsLoaded then
     -- If options loaded, make sure we have all those we need
     options.configurationEnableWindow = lib_helpers.NotNilOrDefault(options.configurationEnableWindow, true)
     options.EnableWindow = lib_helpers.NotNilOrDefault(options.EnableWindow, true)
+    options.ScapeCountLow = lib_helpers.NotNilOrDefault(options.ScapeCountLow, 1)
+    options.ScapeCountHigh = lib_helpers.NotNilOrDefault(options.ScapeCountHigh, 3)
     options.HideWhenMenu = lib_helpers.NotNilOrDefault(options.HideWhenMenu, true)
     options.HideWhenSymbolChat = lib_helpers.NotNilOrDefault(options.HideWhenSymbolChat, true)
     options.HideWhenMenuUnavailable = lib_helpers.NotNilOrDefault(options.HideWhenMenuUnavailable, true)
@@ -30,6 +32,8 @@ else
     {
         configurationEnableWindow = true,
         EnableWindow = true,
+        ScapeCountLow = 1,
+        ScapeCountHigh = 3,
         HideWhenMenu = false,
         HideWhenSymbolChat = false,
         HideWhenMenuUnavailable = false,
